@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Adventure Activity Book for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>AI Adventure Book</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#big-idea" class="nav-link">What is AI?</a></li>
+                <li><a href="#stages" class="nav-link">Stages</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+                <li><a href="#family-projects" class="nav-link">Family Projects</a></li>
+                <li><a href="#parents" class="nav-link">Parents</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">AI Learning Journey</h1>
+                <p class="hero-subtitle">A Magical Adventure into Artificial Intelligence for Kids Ages 5-10</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-brain"></i>
+                        <span>Smart Machines</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Fun Games</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <span>Creative Projects</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <span>Family Learning</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('big-idea')">Start Learning</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('parents')">For Parents</button>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="floating-robot">🤖</div>
+                <div class="floating-star">⭐</div>
+                <div class="floating-brain">🧠</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Idea Section -->
+    <section id="big-idea" class="big-idea-section">
+        <div class="container">
+            <div class="big-idea-card">
+                <h2>🎯 Big Idea: What is AI?</h2>
+                <div class="big-idea-content">
+                    <div class="ai-definition">
+                        <h3>AI stands for <strong>Artificial Intelligence</strong></h3>
+                        <p>It means machines that can learn, think, or act smart—just like people! Imagine a robot that tells jokes, draws your dream house, or plays games with you. That's AI!</p>
+                    </div>
+                    
+                    <div class="understanding-grid">
+                        <h3>🔍 What Kids Will Understand:</h3>
+                        <div class="understanding-items">
+                            <div class="understanding-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <p>AI is like a helper that learns from the world</p>
+                            </div>
+                            <div class="understanding-item">
+                                <i class="fas fa-cogs"></i>
+                                <p>Computers can follow commands and patterns</p>
+                            </div>
+                            <div class="understanding-item">
+                                <i class="fas fa-music"></i>
+                                <p>AI is used in games, music, stories, and art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracker -->
+    <section class="progress-section">
+        <div class="container">
+            <h2>Your Learning Journey</h2>
+            <div class="progress-tracker">
+                <div class="progress-stage" data-stage="1">
+                    <div class="stage-icon">🟢</div>
+                    <h3>Stage 1</h3>
+                    <p>Discovering AI</p>
+                    <p class="stage-age">Ages 5-7</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="0"></div>
+                    </div>
+                </div>
+                <div class="progress-stage" data-stage="2">
+                    <div class="stage-icon">🟡</div>
+                    <h3>Stage 2</h3>
+                    <p>Think Like Computer</p>
+                    <p class="stage-age">Ages 7-10</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="0"></div>
+                    </div>
+                </div>
+                <div class="progress-stage" data-stage="3">
+                    <div class="stage-icon">🟣</div>
+                    <h3>Stage 3</h3>
+                    <p>Make AI Friends</p>
+                    <p class="stage-age">Ages 8-10</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="0"></div>
+                    </div>
+                </div>
+                <div class="progress-stage" data-stage="bonus">
+                    <div class="stage-icon">🎁</div>
+                    <h3>Bonus</h3>
+                    <p>Family Projects</p>
+                    <p class="stage-age">All Ages</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section id="stages" class="stages-section">
+        <div class="container">
+            <h2 class="section-title">Learning Stages</h2>
+            
+            <!-- Stage 1 -->
+            <div class="stage-card" id="stage1">
+                <div class="stage-header stage-1">
+                    <div class="stage-badge">🟢 STAGE 1</div>
+                    <h3>Discovering What AI Is</h3>
+                    <p class="stage-age">Ages 5-7</p>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-intro">
+                        <p><strong>🌱 This stage introduces AI through simple language, pictures, stories, and play.</strong></p>
+                    </div>
+                    
+                    <div class="stage-overview">
+                        <h4>🔹 Key Concepts:</h4>
+                        <ul>
+                            <li><i class="fas fa-robot"></i> "Smart Machines" = computers that learn</li>
+                            <li><i class="fas fa-database"></i> Data = pictures, numbers, sounds, and more</li>
+                            <li><i class="fas fa-magic"></i> AI can talk, draw, and guess!</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="stage-activities">
+                        <h4>🎨 Fun Activities:</h4>
+                        <div class="activity-grid">
+                            <div class="activity-item">
+                                <i class="fas fa-book"></i>
+                                <h5>AI Storytime with ChatGPT</h5>
+                                <p>Ask: "Can you tell me a story about a lion who wanted to fly?"</p>
+                                <p><em>Let your child draw scenes from the story.</em></p>
+                                <button class="btn btn-small" onclick="showActivityModal('story-time')">Try It!</button>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-palette"></i>
+                                <h5>Silly Art with DALL·E</h5>
+                                <p>Ask for: "A penguin eating spaghetti on a trampoline."</p>
+                                <p><em>Print and color the pictures.</em></p>
+                                <button class="btn btn-small" onclick="showActivityModal('picture-maker')">Try It!</button>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-pencil-alt"></i>
+                                <h5>Guessing Game with Quick, Draw!</h5>
+                                <p>Let kids see how the computer guesses what they draw.</p>
+                                <button class="btn btn-small" onclick="showActivityModal('quick-draw')">Play Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-resources">
+                        <h4>🎲 Hands-on Games:</h4>
+                        <ul>
+                            <li>Match animal sounds with pictures</li>
+                            <li>Create a "robot" using recycled materials</li>
+                        </ul>
+                        
+                        <h4>📚 Recommended Books:</h4>
+                        <ul>
+                            <li>"Hello Ruby: Journey Inside the Computer" by Linda Liukas</li>
+                            <li>"If You Give a Mouse an iPhone" by Ann Droyd</li>
+                        </ul>
+                        
+                        <h4>🎥 Videos:</h4>
+                        <ul>
+                            <li>"What is AI?" for kids – YouTube search with parent supervision</li>
+                            <li>SciShow Kids: How Do Computers Work?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="stage-card" id="stage2">
+                <div class="stage-header stage-2">
+                    <div class="stage-badge">🟡 STAGE 2</div>
+                    <h3>Learn to Think Like a Computer</h3>
+                    <p class="stage-age">Ages 7-10</p>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-intro">
+                        <p><strong>🧠 Kids begin understanding how computers "think" using logic, coding, and basic problem solving.</strong></p>
+                    </div>
+                    
+                    <div class="stage-overview">
+                        <h4>🔹 Key Concepts:</h4>
+                        <ul>
+                            <li><i class="fas fa-list-ol"></i> Commands = instructions</li>
+                            <li><i class="fas fa-arrow-right"></i> Sequence = order of steps matters</li>
+                            <li><i class="fas fa-question-circle"></i> Conditional logic: "If... then..."</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="stage-activities">
+                        <h4>🎮 Projects and Activities:</h4>
+                        <div class="activity-grid">
+                            <div class="activity-item">
+                                <i class="fas fa-gamepad"></i>
+                                <h5>Code a Game with Scratch Jr or Scratch</h5>
+                                <p>Build a dance party or pet simulation.</p>
+                                <button class="btn btn-small" onclick="showActivityModal('scratch-jr')">Learn More</button>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <h5>Puzzle Bot with Lightbot</h5>
+                                <p>Teaches logic through puzzles.</p>
+                                <button class="btn btn-small" onclick="showActivityModal('lightbot')">Learn More</button>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-sort"></i>
+                                <h5>Snack Sorting (Data Detective Game)</h5>
+                                <p>Group M&Ms by color, count each group. Turn into a chart!</p>
+                                <button class="btn btn-small" onclick="showActivityModal('data-detective')">Try It!</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-resources">
+                        <h4>📱 Apps & Tools:</h4>
+                        <ul>
+                            <li>Tynker (Kids coding app)</li>
+                            <li>Kodable (Pre-reader and early reader friendly)</li>
+                        </ul>
+                        
+                        <h4>🔧 Make at Home:</h4>
+                        <ul>
+                            <li>DIY robot costume</li>
+                            <li>Paper-based coding cards (like arrows for moving forward, left, right)</li>
+                        </ul>
+                        
+                        <h4>🎨 Creative Project:</h4>
+                        <p><strong>Create a Comic Strip About a Robot</strong><br>
+                        What does the robot do? What problems does it solve?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="stage-card" id="stage3">
+                <div class="stage-header stage-3">
+                    <div class="stage-badge">🟣 STAGE 3</div>
+                    <h3>Make Friends With AI</h3>
+                    <p class="stage-age">Ages 8-10</p>
+                </div>
+                <div class="stage-content">
+                    <div class="stage-intro">
+                        <p><strong>🤖 Now kids can build simple AI models, train computers, and interact with AI in creative ways.</strong></p>
+                    </div>
+                    
+                    <div class="stage-overview">
+                        <h4>🔹 Key Concepts:</h4>
+                        <ul>
+                            <li><i class="fas fa-graduation-cap"></i> AI learns from examples (training data)</li>
+                            <li><i class="fas fa-comments"></i> AI can talk, play music, create images</li>
+                            <li><i class="fas fa-map-marker-alt"></i> AI helps in real life (maps, robots, phones)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="stage-activities">
+                        <h4>🧪 Creative Projects:</h4>
+                        <div class="activity-grid">
+                            <div class="activity-item">
+                                <i class="fas fa-eye"></i>
+                                <h5>Train a Model with Teachable Machine</h5>
+                                <p>Teach AI to recognize happy/sad faces.</p>
+                                <button class="btn btn-small" onclick="showActivityModal('teachable-machine')">Learn More</button>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-microphone"></i>
+                                <h5>Create a Voice Assistant with Voiceflow</h5>
+                                <p>Make a chatbot that says hello, tells a joke, or gives weather updates.</p>
+                                <button class="btn btn-small" onclick="showActivityModal('voiceflow')">Learn More</button>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-images"></i>
+                                <h5>AI Art Gallery</h5>
+                                <p>Use DALL·E to create art on themes: "magic forest", "robot zoo"</p>
+                                <button class="btn btn-small" onclick="showActivityModal('ai-art-gallery')">Create Art!</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stage-resources">
+                        <h4>🎧 Bonus: Make AI Music!</h4>
+                        <ul>
+                            <li>Visit AI tools that create music</li>
+                            <li>Experiment with beat and melody apps</li>
+                        </ul>
+                        
+                        <h4>🧩 ChatGPT Riddle Hour:</h4>
+                        <p>Ask for 5 riddles for 8-year-olds. Let kids guess and explain their answers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Projects Section -->
+    <section id="family-projects" class="family-projects-section">
+        <div class="container">
+            <h2 class="section-title">🎁 Bonus Family Projects</h2>
+            
+            <div class="family-projects-grid">
+                <div class="family-project-card">
+                    <div class="project-icon">📚</div>
+                    <h3>AI Storybook Project</h3>
+                    <p>Co-write a 5-page picture book using ChatGPT + DALL·E. Print and read it as bedtime stories.</p>
+                    <div class="project-steps">
+                        <h4>Steps:</h4>
+                        <ol>
+                            <li>Ask ChatGPT to create a story outline</li>
+                            <li>Generate images with DALL·E for each page</li>
+                            <li>Print and assemble your book</li>
+                            <li>Read together as a family</li>
+                        </ol>
+                    </div>
+                    <button class="btn btn-primary" onclick="showActivityModal('storybook-project')">Start Project</button>
+                </div>
+                
+                <div class="family-project-card">
+                    <div class="project-icon">🎲</div>
+                    <h3>Board Game: "Robot Helper"</h3>
+                    <p>Design a board game where your robot must help grandma find her cat.</p>
+                    <div class="project-steps">
+                        <h4>Materials needed:</h4>
+                        <ul>
+                            <li>Poster board or cardboard</li>
+                            <li>Markers and stickers</li>
+                            <li>Dice or spinner</li>
+                            <li>Small toys for game pieces</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="showActivityModal('robot-game')">Design Game</button>
+                </div>
+                
+                <div class="family-project-card">
+                    <div class="project-icon">📦</div>
+                    <h3>AI Treasure Box</h3>
+                    <p>Decorate a real box. Fill with "data cards" (colors, numbers, feelings). Use for sorting and storytelling games.</p>
+                    <div class="project-steps">
+                        <h4>What to include:</h4>
+                        <ul>
+                            <li>Color cards (red, blue, green, etc.)</li>
+                            <li>Number cards (1-10)</li>
+                            <li>Emotion cards (happy, sad, excited)</li>
+                            <li>Object cards (cat, car, tree)</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="showActivityModal('treasure-box')">Create Box</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Activities Section -->
+    <section id="activities" class="activities-section">
+        <div class="container">
+            <h2 class="section-title">Interactive Activities</h2>
+            
+            <div class="activities-grid">
+                <!-- Drawing Activity -->
+                <div class="activity-card">
+                    <h3><i class="fas fa-pencil-alt"></i> Draw Your AI Friend</h3>
+                    <div class="drawing-area">
+                        <canvas id="drawingCanvas" width="400" height="300"></canvas>
+                        <div class="drawing-controls">
+                            <button class="btn btn-small" onclick="clearCanvas()">Clear</button>
+                            <button class="btn btn-small" onclick="saveDrawing()">Save</button>
+                            <input type="color" id="colorPicker" value="#000000">
+                            <input type="range" id="brushSize" min="1" max="20" value="5">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz Activity -->
+                <div class="activity-card">
+                    <h3><i class="fas fa-question-circle"></i> AI Quiz</h3>
+                    <div id="quiz-container">
+                        <div id="quiz-question"></div>
+                        <div id="quiz-options"></div>
+                        <button class="btn btn-primary" onclick="nextQuestion()">Next Question</button>
+                    </div>
+                </div>
+
+                <!-- Checklist Activity -->
+                <div class="activity-card">
+                    <h3><i class="fas fa-tasks"></i> Activity Checklist</h3>
+                    <div class="checklist-container">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="task1">
+                            <label for="task1">I asked AI to tell me a story</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="task2">
+                            <label for="task2">I created a picture with AI</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="task3">
+                            <label for="task3">I played Quick, Draw!</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="task4">
+                            <label for="task4">I made a Scratch Jr project</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="task5">
+                            <label for="task5">I trained a Teachable Machine</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="task6">
+                            <label for="task6">I created a family project</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">AI Tools & Resources</h2>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🤖</div>
+                    <h3>ChatGPT</h3>
+                    <p>Ask questions, get stories, and have conversations with AI</p>
+                    <a href="https://chat.openai.com" target="_blank" class="btn btn-outline">Visit ChatGPT</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🎨</div>
+                    <h3>DALL·E</h3>
+                    <p>Create amazing pictures just by describing them</p>
+                    <a href="https://openai.com/dall-e-2" target="_blank" class="btn btn-outline">Visit DALL·E</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">✏️</div>
+                    <h3>Quick, Draw!</h3>
+                    <p>Draw and see if AI can guess what you're drawing</p>
+                    <a href="https://quickdraw.withgoogle.com" target="_blank" class="btn btn-outline">Play Quick, Draw!</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🧩</div>
+                    <h3>Scratch Jr</h3>
+                    <p>Create animations and games with drag-and-drop coding</p>
+                    <a href="https://www.scratchjr.org" target="_blank" class="btn btn-outline">Visit Scratch Jr</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🤖</div>
+                    <h3>Lightbot</h3>
+                    <p>Solve programming puzzles with a cute robot</p>
+                    <a href="https://lightbot.com" target="_blank" class="btn btn-outline">Play Lightbot</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🎓</div>
+                    <h3>Teachable Machine</h3>
+                    <p>Train AI to recognize your own images and sounds</p>
+                    <a href="https://teachablemachine.withgoogle.com" target="_blank" class="btn btn-outline">Visit Teachable Machine</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">💬</div>
+                    <h3>Voiceflow</h3>
+                    <p>Create your own AI chatbot and voice assistant</p>
+                    <a href="https://voiceflow.com" target="_blank" class="btn btn-outline">Visit Voiceflow</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🎵</div>
+                    <h3>AI Music Tools</h3>
+                    <p>Create music and beats with artificial intelligence</p>
+                    <a href="#ai-music" class="btn btn-outline">Explore Music AI</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parents Section -->
+    <section id="parents" class="parents-section">
+        <div class="container">
+            <h2 class="section-title">Guide for Parents</h2>
+            
+            <div class="parents-content">
+                <div class="parent-tips">
+                    <h3><i class="fas fa-lightbulb"></i> Tips for Each Stage</h3>
+                    
+                    <div class="tip-card">
+                        <h4>Stage 1 (Ages 5-7): Wonder & Curiosity</h4>
+                        <ul>
+                            <li>Let your child experiment freely with AI tools</li>
+                            <li>Ask questions like "What do you think will happen?"</li>
+                            <li>Celebrate their discoveries and creativity</li>
+                            <li>Focus on the fun and magical aspects of AI</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>Stage 2 (Ages 7-10): Building Skills</h4>
+                        <ul>
+                            <li>Encourage problem-solving and logical thinking</li>
+                            <li>Help them break down complex tasks into steps</li>
+                            <li>Praise persistence and effort over perfection</li>
+                            <li>Connect coding concepts to real-world activities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4>Stage 3 (Ages 8-10): Creating & Innovating</h4>
+                        <ul>
+                            <li>Support their creative projects and ideas</li>
+                            <li>Help them understand AI's limitations and capabilities</li>
+                            <li>Discuss responsible AI use and digital citizenship</li>
+                            <li>Encourage them to share their creations with others</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="safety-guide">
+                    <h3><i class="fas fa-shield-alt"></i> Safety & Best Practices</h3>
+                    <div class="safety-tips">
+                        <div class="safety-item">
+                            <i class="fas fa-eye"></i>
+                            <h4>Supervision</h4>
+                            <p>Always supervise young children when using AI tools</p>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-lock"></i>
+                            <h4>Privacy</h4>
+                            <p>Don't share personal information with AI tools</p>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-comments"></i>
+                            <h4>Communication</h4>
+                            <p>Talk about what AI can and cannot do</p>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Screen Time</h4>
+                            <p>Balance AI activities with other learning experiences</p>
+                        </div>
+                    </div>
+                    
+                    <div class="parent-principles">
+                        <h4>👨‍👩‍👧 Parent Principles:</h4>
+                        <ul>
+                            <li>✅ Make screen time intentional and creative</li>
+                            <li>✅ Be part of the exploration—learn together!</li>
+                            <li>✅ Don't worry about being perfect—celebrate curiosity</li>
+                            <li>✅ Use tech as a tool for creativity and problem solving</li>
+                            <li>✅ Encourage your child to explain what they learned</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="supplies-section">
+                <h3><i class="fas fa-tools"></i> Suggested Supplies</h3>
+                <div class="supplies-grid">
+                    <div class="supply-category">
+                        <h4>🎨 Art Supplies</h4>
+                        <ul>
+                            <li>Crayons, markers, glue, scissors</li>
+                            <li>Old magazines for collages</li>
+                            <li>Construction paper</li>
+                        </ul>
+                    </div>
+                    <div class="supply-category">
+                        <h4>💻 Technology</h4>
+                        <ul>
+                            <li>Tablets or computers with internet</li>
+                            <li>Printable worksheets</li>
+                            <li>Camera for Teachable Machine</li>
+                        </ul>
+                    </div>
+                    <div class="supply-category">
+                        <h4>📚 Learning Materials</h4>
+                        <ul>
+                            <li>Graphs and charts</li>
+                            <li>Matching games</li>
+                            <li>Simple code blocks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Learning Journey</h3>
+                    <p>Making AI education fun and accessible for kids!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#big-idea">What is AI?</a></li>
+                        <li><a href="#stages">Stages</a></li>
+                        <li><a href="#family-projects">Family Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#tools">AI Tools</a></li>
+                        <li><a href="#parents">Parent Guide</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Learning Journey. Made with ❤️ for young learners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Activity Modals -->
+    <div id="activityModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
