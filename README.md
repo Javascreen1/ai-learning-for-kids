@@ -72,7 +72,7 @@ ai-learning-journey/
 
 ## 🚀 Getting Started
 
-### Option 1: Open Directly
+### Open Directly
 1. Download all files to a folder
 2. Double-click `index.html` to open in your web browser
 3. Start exploring the AI learning journey!
