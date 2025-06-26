@@ -77,16 +77,6 @@ ai-learning-journey/
 2. Double-click `index.html` to open in your web browser
 3. Start exploring the AI learning journey!
 
-### Option 2: Local Server (Recommended)
-1. Install a local server (like Live Server for VS Code)
-2. Open the project folder in your code editor
-3. Start the local server
-4. Navigate to the provided local URL
-
-### Option 3: Online Hosting
-1. Upload all files to your web hosting service
-2. Access via your domain name
-
 ## 🎯 How to Use
 
 ### For Kids
